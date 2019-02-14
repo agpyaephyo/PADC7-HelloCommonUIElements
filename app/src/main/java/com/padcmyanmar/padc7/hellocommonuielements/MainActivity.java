@@ -5,6 +5,7 @@ import android.support.design.bottomappbar.BottomAppBar;
 import android.support.design.chip.Chip;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -62,6 +63,9 @@ public class MainActivity extends AppCompatActivity {
 
         BottomAppBar bab = findViewById(R.id.bab);
         bab.replaceMenu(R.menu.menu_main);
+
+        TextInputLayout tilAnotherFlyingHint = findViewById(R.id.til_another_flying_hint);
+        tilAnotherFlyingHint.setError("Some Error");
     }
 
     @Override

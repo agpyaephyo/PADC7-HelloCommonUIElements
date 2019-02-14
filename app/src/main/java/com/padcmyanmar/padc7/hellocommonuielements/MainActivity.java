@@ -1,15 +1,16 @@
 package com.padcmyanmar.padc7.hellocommonuielements;
 
 import android.os.Bundle;
+import android.support.design.chip.Chip;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.support.design.widget.TextInputEditText;
-import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.CompoundButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,6 +29,35 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        Chip chpCheckable = findViewById(R.id.chp_checkable);
+        chpCheckable.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    Toast.makeText(getApplicationContext(), "Checked : chpCheckable", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+        Chip chpWithIcon = findViewById(R.id.chp_with_icon);
+        chpWithIcon.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    Toast.makeText(getApplicationContext(), "Checked : chpWithIcon", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+        /*
+        chpWithIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "onClick : chpWithIcon", Toast.LENGTH_SHORT).show();
+            }
+        });
+        */
     }
 
     @Override

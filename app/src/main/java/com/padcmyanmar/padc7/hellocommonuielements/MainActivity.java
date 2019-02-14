@@ -1,6 +1,7 @@
 package com.padcmyanmar.padc7.hellocommonuielements;
 
 import android.os.Bundle;
+import android.support.design.bottomappbar.BottomAppBar;
 import android.support.design.chip.Chip;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -58,6 +59,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         */
+
+        BottomAppBar bab = findViewById(R.id.bab);
+        bab.replaceMenu(R.menu.menu_main);
     }
 
     @Override

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PADC7-HelloCommonUIElements</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="lbl_material_button">Material Button</string>
+    <string name="lbl_chip_text">This is Chip.</string>
+</resources>

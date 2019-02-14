@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+    <style name="HintText" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/text_regular_2x</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <style name="CounterText" parent="TextAppearance.Design.Counter">
+        <item name="android:textSize">@dimen/text_regular_2x</item>
+        <item name="android:textColor">@android:color/holo_blue_dark</item>
+    </style>
+
+    <style name="CounterOverFlow" parent="TextAppearance.Design.Counter.Overflow">
+        <item name="android:textSize">@dimen/text_regular_2x</item>
+        <item name="android:textColor">@android:color/holo_red_dark</item>
+    </style>
+
+    <style name="ErrorText" parent="TextAppearance.Design.Error">
+        <item name="android:textSize">@dimen/text_regular_2x</item>
+        <item name="android:textColor">@android:color/holo_green_dark</item>
+    </style>
+
+</resources>
